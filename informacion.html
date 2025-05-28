@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ODS 11: Ciudades y Comunidades Sostenibles</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="accessibility-panel" class="accessibility-panel">
+    <button onclick="togglePanel()">⚙️ Accesibilidad</button>
+    <div id="panel-content" class="hidden">
+      <label>Tamaño de fuente:</label>
+      <button onclick="changeFontSize(1)">Aumentar</button>
+      <button onclick="changeFontSize(-1)">Disminuir</button>
+
+      <label>Cambiar fuente:</label>
+      <select onchange="changeFont(this.value)">
+        <option value="default">Por defecto</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+
+      <label>Modo de color:</label>
+      <button onclick="toggleDarkMode()">Modo Oscuro</button>
+      <button onclick="toggleHighContrast()">Alto Contraste</button>
+      <button onclick="toggleDaltonism()">Daltonismo</button>
+
+      <label>Otros ajustes:</label>
+      <button onclick="toggleCursor()">Cambiar Cursor</button>
+      <button onclick="toggleImages()">Quitar Imágenes</button>
+      <button onclick="toggleLinks()">Quitar/Sobresaltar Links</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>ODS 11: Ciudades y Comunidades Sostenibles</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="cv.html">Mi CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="mas.html">Más</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Más sobre Ciudades y Comunidades Sostenibles</h2>
+    <p>El crecimiento urbano sostenible es crucial para el bienestar del planeta y sus habitantes. Aquí te compartimos algunos datos, retos y soluciones clave:</p>
+
+    <section>
+      <h3>Datos relevantes</h3>
+      <ul>
+        <li>Alrededor del 55% de la población mundial vive en ciudades.</li>
+        <li>Se espera que para 2050 esta cifra aumente a casi el 70%.</li>
+        <li>Las ciudades consumen aproximadamente el 75% de la energía global y generan más del 60% de las emisiones de carbono.</li>
+        <li>En 2022, solo la mitad de la población urbana mundial tenía acceso al transporte público.</li>
+        <li>Se estima que, en 2020, 1100 millones de residentes urbanos vivían en barrios marginales o en condiciones similares, y se espera que otros 2000 millones se sumen en los próximos 30 años.</li>
+        <li>Las ciudades se expanden físicamente más rápido que su población, con tasas anuales de consumo de suelo del 2.0% comparado con el crecimiento poblacional del 1.6% (2000-2010).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Retos principales</h3>
+      <ul>
+        <li>Contaminación del aire y del agua.</li>
+        <li>Congestión vehicular y transporte ineficiente.</li>
+        <li>Falta de viviendas asequibles.</li>
+        <li>Gestión inadecuada de residuos.</li>
+        <li>Vulnerabilidad ante desastres naturales.</li>
+        <li>Exclusión social estructural y desigualdad en el acceso a servicios y espacios públicos.</li>
+        <li>Necesidad de reducir las emisiones de CO2 y emplear fuentes de energía renovable.</li>
+        <li>Adaptación al cambio climático y gestión de recursos hídricos.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Soluciones y acciones</h3>
+      <ul>
+        <li>Impulsar el transporte público eficiente y sostenible.</li>
+        <li>Implementar planes de urbanismo verde y resiliente.</li>
+        <li>Fomentar la participación ciudadana en la planificación urbana.</li>
+        <li>Invertir en tecnologías limpias y energías renovables.</li>
+        <li>Promover políticas que aseguren vivienda digna para todos.</li>
+        <li>Crear barrios habitables y económicamente integradores.</li>
+        <li>Adaptarse a los impactos climáticos actuales y futuros.</li>
+        <li>Apoyarse en soluciones inteligentes y tecnológicas para la gestión urbana.</li>
+        <li>Fomentar la economía circular y la reducción del desperdicio.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Todos los derechos reservados. | Saúl Bustamante Bernabe</p>
+  </footer>
+
+  <script src="./js/accesibilidad.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ODS 11: Ciudades y Comunidades Sostenibles</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="accessibility-panel" class="accessibility-panel">
+    <button onclick="togglePanel()">⚙️ Accesibilidad</button>
+    <div id="panel-content" class="hidden">
+      <label>Tamaño de fuente:</label>
+      <button onclick="changeFontSize(1)">Aumentar</button>
+      <button onclick="changeFontSize(-1)">Disminuir</button>
+
+      <label>Cambiar fuente:</label>
+      <select onchange="changeFont(this.value)">
+        <option value="default">Por defecto</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+
+      <label>Modo de color:</label>
+      <button onclick="toggleDarkMode()">Modo Oscuro</button>
+      <button onclick="toggleHighContrast()">Alto Contraste</button>
+      <button onclick="toggleDaltonism()">Daltonismo</button>
+
+      <label>Otros ajustes:</label>
+      <button onclick="toggleCursor()">Cambiar Cursor</button>
+      <button onclick="toggleImages()">Quitar Imágenes</button>
+      <button onclick="toggleLinks()">Quitar/Sobresaltar Links</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>ODS 11: Ciudades y Comunidades Sostenibles</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="cv.html">Mi CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="mas.html">Más</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Objetivo 11: Ciudades y Comunidades Sostenibles</h1>
+    <p>El Objetivo de Desarrollo Sostenible número 11 busca lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.</p>
+
+    <img src="./assets/images/index_1.jpeg" alt="Ciudad sostenible" class="image-responsive" />
+
+    <h2>¿Por qué es importante?</h2>
+    <p>Más de la mitad de la población mundial vive en ciudades, lo que implica grandes retos como el acceso a viviendas dignas, transporte eficiente, servicios públicos y espacios verdes. Promover el desarrollo urbano sostenible mejora la calidad de vida de millones de personas.</p>
+
+    <h2>Metas clave del ODS 11</h2>
+    <ul>
+        <li>Asegurar el acceso de todas las personas a viviendas y servicios básicos adecuados y seguros.</li>
+        <li>Mejorar la urbanización inclusiva y sostenible.</li>
+        <li>Redoblar esfuerzos para proteger el patrimonio cultural y natural del mundo.</li>
+        <li>Reducir significativamente el número de muertes causadas por desastres naturales.</li>
+        <li>Proporcionar acceso a sistemas de transporte seguros, asequibles y sostenibles para todos.</li>
+    </ul>
+
+    <h2>¿Cómo puedes contribuir?</h2>
+    <p>Desde elegir medios de transporte más sostenibles, participar en la planificación urbana o apoyar políticas públicas, cada acción cuenta para lograr ciudades más sostenibles y equitativas.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Todos los derechos reservados. | Saúl Bustamante Bernabe</p>
+  </footer>
+
+  <script src="./js/accesibilidad.js"></script>
+</body>
+</html>

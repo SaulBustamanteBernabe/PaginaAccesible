@@ -1,0 +1,168 @@
+main section {
+  padding: 20px;
+  border: 1px solid #ddd; /* Borde sutil para la sección */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+main section h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+main section p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna para los elementos */
+  gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+form label {
+  display: block; /* Cada etiqueta en una línea separada */
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho */
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+form > button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form > button[type="submit"] {
+  background-color: #007bff; /* Color azul para el botón de enviar */
+}
+
+form > button[type="reset"] {
+  background-color: #6c757d; /* Color gris para el botón de limpiar */
+}
+
+form > button:hover {
+  opacity: 0.9;
+}
+
+/* Estilos específicos para los botones en la fila */
+form > button {
+  width: auto; /* Ajusta el ancho al contenido */
+  display: inline-block; /* Permite que estén en la misma línea si hay espacio */
+}
+
+/* Modo oscuro */
+.dark-mode main section {
+  background-color: #333; /* Fondo oscuro */
+  color: #f9f9f9; /* Texto claro */
+}
+.dark-mode main section h2 {
+  color: #e0e0e0; /* Títulos claros */
+}
+.dark-mode main section p {
+  color: #ddd; /* Texto claro */
+}
+
+.dark-mode form label {
+  color: #e0e0e0; /* Etiquetas claras */
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode textarea {
+  background-color: #555; /* Fondo de campos de entrada oscuro */
+  color: #f9f9f9; /* Texto claro en campos de entrada */
+  border: 1px solid #666; /* Borde más oscuro */
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="email"]:focus,
+.dark-mode textarea:focus {
+  border-color: #007bff; /* Borde azul al enfocar */
+  outline: none; /* Elimina el contorno predeterminado */
+}
+
+.dark-mode form > button {
+  color: white; /* Texto blanco en los botones */
+}
+
+.dark-mode form > button {
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.dark-mode form > button:hover {
+  opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
+}
+
+.dark-mode form > button[type="submit"] {
+  background-color: #0056b3; /* Color azul más oscuro */
+}
+
+.dark-mode form > button[type="reset"] {
+  background-color: #5a6268; /* Color gris más oscuro */
+}
+
+/* Alto contraste */
+.high-contrast main section {
+  background-color: black;
+  color: yellow;
+}
+
+.high-contrast main section h2 {
+  color: yellow; /* Títulos en amarillo */
+}
+.high-contrast main section p {
+  color: yellow; /* Texto en amarillo */
+}
+.high-contrast form label {
+  color: yellow; /* Etiquetas en amarillo */
+}
+.high-contrast input[type="text"],
+.high-contrast input[type="email"],
+.high-contrast textarea {
+  background-color: black; /* Fondo de campos de entrada oscuro */
+  color: yellow; /* Texto en campos de entrada amarillo */
+  border: 1px solid yellow; /* Borde más oscuro */
+}
+.high-contrast input[type="text"]:focus,
+.high-contrast input[type="email"]:focus,
+.high-contrast textarea:focus {
+  border-color: cyan; /* Borde cian al enfocar */
+  outline: none; /* Elimina el contorno predeterminado */
+}
+.high-contrast form > button {
+  color: white; /* Texto blanco en los botones */
+}
+.high-contrast form > button:hover {
+  opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
+}
+.high-contrast form > button[type="submit"] {
+  background-color: cyan; /* Color cian para el botón de enviar */
+  color: black; /* Texto blanco en el botón de enviar */
+}
+.high-contrast form > button[type="reset"] {
+  background-color: yellow; /* Color amarillo para el botón de limpiar */
+  color: black; /* Texto negro en el botón de limpiar */
+}

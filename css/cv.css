@@ -1,0 +1,29 @@
+.perfil {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una fila */
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  align-items: center; /* Alinea verticalmente los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+  gap: 20px; /* Espacio entre la imagen y los datos */
+  padding: 15px; /* Opcional: añade un poco de espacio alrededor de la sección */
+}
+
+.perfil-imagen {
+  flex-shrink: 0; /* Evita que la imagen se encoja demasiado */
+}
+
+.perfil-imagen img {
+  width: 100px; /* Ajusta el tamaño deseado para la imagen */
+  height: auto;
+  border-radius: 10px; /* Opcional: para bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra para dar profundidad */
+}
+
+.perfil-datos h2 {
+  margin-top: 0; /* Elimina el margen superior predeterminado del h2 */
+  margin-bottom: 5px;
+}
+
+.perfil-datos p {
+  margin-bottom: 3px;
+}

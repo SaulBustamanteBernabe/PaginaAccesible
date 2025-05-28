@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ODS 11: Ciudades y Comunidades Sostenibles</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/cv.css" />
+</head>
+<body>
+  <div id="accessibility-panel" class="accessibility-panel">
+    <button onclick="togglePanel()">⚙️ Accesibilidad</button>
+    <div id="panel-content" class="hidden">
+      <label>Tamaño de fuente:</label>
+      <button onclick="changeFontSize(1)">Aumentar</button>
+      <button onclick="changeFontSize(-1)">Disminuir</button>
+
+      <label>Cambiar fuente:</label>
+      <select onchange="changeFont(this.value)">
+        <option value="default">Por defecto</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+
+      <label>Modo de color:</label>
+      <button onclick="toggleDarkMode()">Modo Oscuro</button>
+      <button onclick="toggleHighContrast()">Alto Contraste</button>
+      <button onclick="toggleDaltonism()">Daltonismo</button>
+
+      <label>Otros ajustes:</label>
+      <button onclick="toggleCursor()">Cambiar Cursor</button>
+      <button onclick="toggleImages()">Quitar Imágenes</button>
+      <button onclick="toggleLinks()">Quitar/Sobresaltar Links</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Mi CV</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="cv.html">Mi CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="mas.html">Más</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="perfil">
+      <div class="perfil-imagen">
+        <img src="./assets/images/saul.jpg" alt="Foto de perfil de Saúl Bustamante Bernabe"/>
+      </div>
+      <div class="perfil-datos">
+        <h2>Saúl Bustamante Bernabe</h2>
+        <p><strong>Ubicación:</strong> Colima, México</p>
+        <p><strong>Estudiante en:</strong> Facultad de Ingeniería Electromecánica</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Perfil Profesional</h2>
+      <p>Estudiante avanzado de Ingeniería de Software en la Universidad de Colima, con un fuerte interés en el desarrollo web, la creación de soluciones tecnológicas accesibles y sostenibles, y la aplicación de la tecnología para el mejoramiento de las ciudades. Con conocimientos en desarrollo front-end, back-end (PHP) y bases de datos, además de un compromiso con la accesibilidad web y metodologías ágiles como Scrum.</p>
+    </section>
+
+    <section>
+      <h2>Educación</h2>
+      <ul>
+        <li><strong>Licenciatura en Ingeniería de Software</strong> - Universidad de Colima (2022)</li>
+        <li><strong>Curso en SCRUM</strong> - CertiProf (2024)</li>
+      </ul>
+    </section>
+
+     <section>
+    <h2>Experiencia Profesional</h2>
+      <ul>
+        <li><strong>Proyectos Universitarios</strong> - Universidad de Colima</li>
+        <ul>
+          <li><strong>Videojuego Educativo sobre el ODS 15</strong> (2022)
+            <ul>
+              <li>Desarrollo de un videojuego interactivo para niños enfocado en crear conciencia sobre el Objetivo de Desarrollo Sostenible número 15 (Vida de ecosistemas terrestres).</li>
+              <li>Implementación de mecánicas de juego educativas y visualmente atractivas.</li>
+            </ul>
+          </li>
+          <li><strong>Blog Personal de Publicación de Artículos</strong> (2023)
+            <ul>
+              <li>Desarrollo de un blog personal con funcionalidades para la publicación, visualización y organización de artículos.</li>
+              <li>Implementación de una interfaz de usuario intuitiva para la lectura y navegación.</li>
+            </ul>
+          </li>
+          <li><strong>Foro Web de Publicación y Conversación</strong> (2023)
+            <ul>
+              <li>Desarrollo de un foro web que permite a los usuarios publicar temas, participar en conversaciones y compartir ideas.</li>
+              <li>Implementación de funcionalidades de registro, autenticación y gestión de publicaciones.</li>
+            </ul>
+          </li>
+          <li><strong>App Web de Gestión de Inventario de Almacén</strong> (2024)
+            <ul>
+              <li>Desarrollo de una aplicación web para la gestión y administración eficiente del inventario de un almacén.</li>
+              <li>Implementación de funcionalidades para el registro de entradas y salidas, control de stock y generación de reportes.</li>
+            </ul>
+          </li>
+          <li><strong>Aplicación Móvil Gestora de Pólizas de Seguros</strong> (2024)
+            <ul>
+              <li>Desarrollo de una aplicación móvil para la gestión y administración de pólizas de seguros personales, de vehículos y empresariales.</li>
+              <li>Implementación de una plataforma para visualizar detalles de las pólizas y gestionar la información relacionada.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>PHP</li>
+        <li>Bases de Datos (MySQL, PostgreSQL - *por favor, especifica si tienes experiencia con alguna en particular*)</li>
+        <li>Accesibilidad Web (WCAG 2.1)</li>
+        <li>React, Vue (básico)</li>
+        <li>Responsive Design y Mobile First</li>
+        <li>Git & GitHub</li>
+        <li>Metodología Scrum</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certificaciones</h2>
+      <ul>
+        <li>Certificación Scrum - CertiProf</li>
+        <li>Desarrollo Web Responsive - freeCodeCamp</li>
+        <li>Introducción a la Accesibilidad Web - Google Developers</li>
+        <li>Git y GitHub - CódigoFacilito</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español - Nativo</li>
+        <li>Inglés - Intermedio Alto (B2)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contacto Profesional</h2>
+      <p>📧 <a href="mailto:sbustamante@ucol.mx">sbustamante@ucol.mx</a></p>
+      <p>💼 <a href="https://www.linkedin.com/in/saul-bustamante-bernabe-026abb2bb/" target="_blank">LinkedIn</a></p>
+      <p>💻 <a href="https://github.com/SaulBustamanteBernabe" target="_blank">GitHub</a></p>
+    </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 Todos los derechos reservados. | Saúl Bustamante Bernabe</p>
+  </footer>
+
+  <script src="./js/accesibilidad.js"></script>
+</body>
+</html>

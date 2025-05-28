@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ODS 11: Ciudades y Comunidades Sostenibles</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="accessibility-panel" class="accessibility-panel">
+    <button onclick="togglePanel()">⚙️ Accesibilidad</button>
+    <div id="panel-content" class="hidden">
+      <label>Tamaño de fuente:</label>
+      <button onclick="changeFontSize(1)">Aumentar</button>
+      <button onclick="changeFontSize(-1)">Disminuir</button>
+
+      <label>Cambiar fuente:</label>
+      <select onchange="changeFont(this.value)">
+        <option value="default">Por defecto</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+
+      <label>Modo de color:</label>
+      <button onclick="toggleDarkMode()">Modo Oscuro</button>
+      <button onclick="toggleHighContrast()">Alto Contraste</button>
+      <button onclick="toggleDaltonism()">Daltonismo</button>
+
+      <label>Otros ajustes:</label>
+      <button onclick="toggleCursor()">Cambiar Cursor</button>
+      <button onclick="toggleImages()">Quitar Imágenes</button>
+      <button onclick="toggleLinks()">Quitar/Sobresaltar Links</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>ODS 11: Ciudades y Comunidades Sostenibles</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="cv.html">Mi CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="mas.html">Más</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Recursos sobre el ODS 11</h2>
+      <p>Para conocer más sobre el Objetivo de Desarrollo Sostenible número 11, aquí tienes algunos recursos confiables y oficiales que pueden ayudarte a profundizar en el tema:</p>
+
+      <ul>
+        <li>
+          🌍 <a href="https://www.un.org/sustainabledevelopment/es/cities/" target="_blank">
+            ODS 11 en la ONU (Versión en Español)
+          </a>
+        </li>
+        <li>
+          📘 <a href="https://sdgs.un.org/goals/goal11" target="_blank">
+            Página oficial del ODS 11 en Naciones Unidas (Inglés)
+          </a>
+        </li>
+        <li>
+          🏙️ <a href="https://www.unhabitat.org/" target="_blank">
+            ONU-Hábitat: Programa de las Naciones Unidas para los Asentamientos Humanos
+          </a>
+        </li>
+        <li>
+          📊 <a href="https://dataportal.opendataforafrica.org/" target="_blank">
+            Open Data Portal - Datos abiertos sobre desarrollo sostenible
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Cursor Accesible</h2>
+      <p>Para mejorar la accesibilidad se utilizo un cursor llamativo para la accesibilidad.</p>
+      <p>Fuente: <a href="https://icons8.com/">Icons8</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Todos los derechos reservados. | Saúl Bustamante Bernabe</p>
+  </footer>
+
+  <script src="./js/accesibilidad.js"></script>
+</body>
+</html>
