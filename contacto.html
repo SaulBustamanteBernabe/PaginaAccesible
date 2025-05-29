@@ -53,18 +53,26 @@
       <h2>Contáctame</h2>
       <p>¿Tienes alguna duda, comentario o propuesta? Rellena el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
 
-      <form action="https://formspree.io/f/xgvkgnke" method="POST">
+      <form id="contact-form" action="https://formspree.io/f/xgvkgnke" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="name" required />
 
         <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%\+\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,}$"/>
 
         <label for="mensaje">Descripción:</label>
         <textarea id="mensaje" name="message" rows="5" required></textarea>
 
+        <div>
+          <label id="captcha-label" for="captcha">¿Cuánto es <span id="numero1"></span> + <span id="numero2"></span>?</label>
+          <input type="text" id="captcha" required />
+        </div>
+
         <button type="submit">Enviar</button>
         <button type="reset">Limpiar</button>
+        <small>
+          ⚠️ La información proporcionada será enviada por correo electrónico a través de un servicio externo (Formspree). No compartas datos personales sensibles.
+        </small>
       </form>
     </section>
   </main>
@@ -74,5 +82,6 @@
   </footer>
 
   <script src="./js/accesibilidad.js"></script>
+  <script src="./js/captcha.js"></script>
 </body>
 </html>

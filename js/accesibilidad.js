@@ -48,9 +48,7 @@ function toggleCursor() {
 
 // Ocultar imágenes
 function toggleImages() {
-  document.querySelectorAll('img').forEach(img => {
-    img.classList.toggle('hidden-img');
-  });
+  document.body.classList.toggle('hidden-img');
   saveSettings();
 }
 
